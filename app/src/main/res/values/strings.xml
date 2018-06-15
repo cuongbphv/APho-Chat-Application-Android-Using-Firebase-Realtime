@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">À Phố</string>
+    <string name="login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="repassword">Nhập lại mật khẩu</string>
+    <string name="no_account">Bạn chưa có tài khoản? </string>
+    <string name="cancel">Quay lại</string>
+    <string name="fullName">Họ tên</string>
+    <string name="phoneNumber">Điện thoại</string>
+    <string name="gender">Giới tính</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="dateOfBirth">Ngày sinh</string>
+    <string name="address">Địa chỉ</string>
+    <string name="description">Mô tả</string>
+    <string name="edit_button">Chỉnh sửa</string>
+    <string name="add_friend_button">Kết bạn</string>
+    <string name="reject_friend_button">Từ chối lời mời</string>
+    <string name="view_info_friend">Xem thông tin bạn bè</string>
+    <string name="list_request">Danh sách yêu cầu kết bạn</string>
+    <string name="search_friend_message">Bạn bè, tin nhắn...</string>
+    <string name="search_friend_by_phone">Tìm bạn bằng số điện thoại</string>
+    <string name="search_friend_by_email">Tìm bạn bằng tài khoản email</string>
+    <string name="friend">Bạn bè</string>
+    <string name="group">Hội nhóm</string>
+    <string name="message">Tin nhắn...</string>
+    <string name="email_reset_password">Email khôi phục mật khẩu</string>
+    <string name="choose_picture_avatar">Chọn ảnh đại diện</string>
+    <string name="camera_picture_avatar">Chụp ảnh đại diện</string>
+    <string name="choose_picture_background">Chọn ảnh bìa</string>
+    <string name="camera_picture_background">Chụp ảnh bìa</string>
+    <string name="default_avatar">Ảnh đại diện mặc định</string>
+    <string name="default_background">Ảnh bìa mặc định</string>
+    <string name="quit">Hủy bỏ</string>
+
+    <string-array name="private_status_array">
+        <item>Mọi người</item>
+        <item>Bạn bè</item>
+        <item>Chỉ mình tôi</item>
+    </string-array>
+</resources>

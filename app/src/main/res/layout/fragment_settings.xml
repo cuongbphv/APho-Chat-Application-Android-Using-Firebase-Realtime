@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarSearch"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/background_toolbar"
+        app:titleTextColor="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cài đặt ứng dụng"
+                android:textSize="@dimen/text_size_title_toolbar"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnPrivatePolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_edit_text_7dp"
+            android:layout_marginBottom="@dimen/padding_edit_text_7dp"
+            android:text="Quyền riêng tư"
+            android:paddingLeft="@dimen/padding_left_table_row"
+            android:textSize="@dimen/text_size_fragment_personal"
+            android:layout_span="1"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/arrow_right"
+            android:layout_marginStart="@dimen/margin_top_10dp"
+            android:layout_marginEnd="@dimen/margin_top_10dp"/>
+    </TableRow>
+
+    <View android:background="@color/gray"
+        android:layout_width ="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="2dp"/>
+
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnAccountPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_edit_text_7dp"
+            android:layout_marginBottom="@dimen/padding_edit_text_7dp"
+            android:text="Đổi mật khẩu"
+            android:paddingLeft="@dimen/padding_left_table_row"
+            android:textSize="@dimen/text_size_fragment_personal"
+            android:layout_span="1"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/arrow_right"
+            android:layout_marginStart="@dimen/margin_top_10dp"
+            android:layout_marginEnd="@dimen/margin_top_10dp"/>
+    </TableRow>
+
+    <View android:background="@color/gray"
+        android:layout_width ="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="2dp"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnAboutApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_edit_text_7dp"
+            android:layout_marginBottom="@dimen/padding_edit_text_7dp"
+            android:text="Thông tin ứng dụng"
+            android:paddingLeft="@dimen/padding_left_table_row"
+            android:textSize="@dimen/text_size_fragment_personal"
+            android:layout_span="1"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/icon_about_app"
+            android:layout_marginStart="@dimen/margin_top_10dp"
+            android:layout_marginEnd="@dimen/margin_top_10dp"/>
+    </TableRow>
+
+    <View android:background="@color/gray"
+        android:layout_width ="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="2dp"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_edit_text_7dp"
+            android:layout_marginBottom="@dimen/padding_edit_text_7dp"
+            android:text="Đăng xuất"
+            android:paddingStart="@dimen/padding_left_table_row"
+            android:textSize="@dimen/text_size_fragment_personal"
+            android:layout_span="1"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/logout"
+            android:layout_marginStart="@dimen/margin_top_10dp"
+            android:layout_marginEnd="@dimen/margin_top_10dp"/>
+    </TableRow>
+
+    <View android:background="@color/gray"
+        android:layout_width ="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="2dp"/>
+
+
+    </TableLayout>

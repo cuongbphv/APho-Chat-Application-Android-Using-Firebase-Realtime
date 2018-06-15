@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeAudioMessageMine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_message_mine"
+        android:padding="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/labelPlayMine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhấn"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageButton
+            android:id="@+id/btnPlayAudioMessageMine"
+            android:layout_width="34dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/icon_play_message_audio"
+            android:background="@android:color/transparent"
+            android:layout_toEndOf="@+id/labelPlayMine"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/labelToListenMine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tin thoại"
+            android:layout_toEndOf="@+id/btnPlayAudioMessageMine"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewAudioMessageTimeMine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeAudioMessageMine"
+        android:text="20:09"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatarSeenAudio"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/relativeAudioMessageMine"
+        android:layout_marginEnd="5dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

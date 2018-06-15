@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/background_toolbar"
+        app:titleTextColor="@color/white">
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:hint="@string/fullName"
+        android:inputType="text"
+        android:maxLength="50"
+        android:drawableStart="@drawable/drawable_name"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="10dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextFullName"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_edit_profile"
+            android:drawableStart="@drawable/drawable_gender"
+            android:drawablePadding="3dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_edit_profile"
+            android:buttonTint="@color/black"
+            android:layout_marginStart="15dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:textSize="@dimen/text_size_edit_profile"
+            android:layout_marginStart="10dp"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_below="@id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:hint="@string/address"
+        android:inputType="text"
+        android:maxLength="30"
+        android:drawableStart="@drawable/drawable_address"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_below="@id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:hint="@string/phoneNumber"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:drawableStart="@drawable/drawable_phone_number"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextDateOfBirth"
+        android:layout_below="@id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:hint="@string/dateOfBirth"
+        android:inputType="date"
+        android:drawableStart="@drawable/drawable_date_of_birth"
+        android:drawablePadding="5dp"
+        android:maxLength="10"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_below="@id/editTextDateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:inputType="text|textMultiLine"
+        android:hint="@string/description"
+        android:drawableStart="@drawable/drawable_description"
+        android:gravity="top"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:drawablePadding="5dp"
+        android:maxLength="100"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/editTextDescription"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/buttonEditProfiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button"
+            android:layout_weight="3"
+            android:layout_marginLeft="30dp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnBackToPersonalFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy bỏ"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button_danger"
+            android:layout_weight="3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</RelativeLayout>

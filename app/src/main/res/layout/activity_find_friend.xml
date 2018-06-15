@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarFindFriend"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/background_toolbar"
+        app:titleTextColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/iconBackFriendFragment"
+                android:src="@drawable/back"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_info_friend"
+                android:textSize="20sp"
+                android:paddingStart="15dp"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/iconBackFriendFragment"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relavetiveFindFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBarFindFriend"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <EditText android:id="@+id/editTextSearchByPhoneNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingRight="40dp"
+            android:hint="@string/search_friend_by_phone"
+            android:drawableRight="@drawable/icon_find_friend"
+            android:background="@drawable/background_edit_text"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText android:id="@+id/editTextSearchByEmail"
+            android:layout_below="@+id/editTextSearchByPhoneNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingRight="40dp"
+            android:hint="@string/search_friend_by_email"
+            android:drawableRight="@drawable/icon_find_friend"
+            android:background="@drawable/background_edit_text"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineHorizontal"
+        android:background="@color/gray"
+        android:layout_width ="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/relavetiveFindFriend"
+        android:elevation="2dp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeSearchProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineHorizontal"
+        android:visibility="invisible"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:focusable="true"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#FFFFFFFF"
+            android:id="@+id/avatarSearchProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/nameSearchProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/avatarSearchProfile"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/btnSendRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/btnRejectRequest"
+            android:layout_marginTop="35dp"
+            />
+
+        <ImageView
+            android:id="@+id/btnRejectRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reject"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/lineHorizontalFinish"
+        android:background="@color/gray"
+        android:layout_width ="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/relativeSearchProfile"
+        android:elevation="2dp"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

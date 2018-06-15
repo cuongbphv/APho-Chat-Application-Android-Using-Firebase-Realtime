@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/optChangeAvatar"
+        android:title="@string/choose_picture_avatar"/>
+    <item
+        android:id="@+id/optChangeAvatarWithCamera"
+        android:title="@string/camera_picture_avatar"/>
+    <item
+        android:id="@+id/optChangeBackground"
+        android:title="@string/choose_picture_background"/>
+    <item
+        android:id="@+id/optChangeBackgroundWithCamera"
+        android:title="@string/camera_picture_background"/>
+    <item
+        android:id="@+id/optDefaultAvatar"
+        android:title="@string/default_avatar"/>
+    <item
+        android:id="@+id/optDefaultBackground"
+        android:title="@string/default_background"/>
+    <item
+        android:id="@+id/optCancel"
+        android:title="@string/quit"/>
+</menu>

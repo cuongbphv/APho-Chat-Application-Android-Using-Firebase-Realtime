@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarMoreInfoMessage"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/background_toolbar"
+        app:titleTextColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/btnBackToMessage"
+                android:layout_width="wrap_content"
+                android:src="@drawable/back"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin cuộc trò chuyện"
+                android:textSize="18sp"
+                android:paddingStart="15dp"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@+id/btnBackToMessage"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relativeMoreInfoMessage"
+        android:layout_below="@+id/toolBarMoreInfoMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#FFFFFFFF"
+            android:id="@+id/avatarMoreInfoProfile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/avatar_default"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/nameMoreInfoProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/avatarMoreInfoProfile"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="10dp"
+            android:text="Bùi Cường"
+            />
+
+        <TextView
+            android:id="@+id/profileMoreInfoMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/avatarMoreInfoProfile"
+            android:layout_below="@+id/nameMoreInfoProfile"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="10dp"
+            android:text="Xem trang cá nhân"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/relativeMoreInfoMessage"
+        android:background="@color/gray"
+        android:layout_width ="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="2dp"/>
+
+    <TableLayout
+        android:id="@+id/tableLayoutMoreInfoMessage"
+        android:layout_below="@+id/relativeMoreInfoMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/labelImageStorage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Kho ảnh chia sẻ"
+                android:textColor="@color/black"
+                android:paddingStart="@dimen/padding_left_table_row"
+                android:paddingEnd="@dimen/padding_left_table_row"
+                android:textSize="@dimen/text_size_fragment_personal"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:background="@android:color/transparent"
+                android:layout_marginStart="@dimen/margin_top_10dp"/>
+        </TableRow>
+
+        <View
+            android:background="@color/gray"
+            android:layout_width ="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="1dip"
+            android:elevation="2dp"/>
+
+        <ListView
+            android:id="@+id/listImageStorage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </TableLayout>
+
+</RelativeLayout>

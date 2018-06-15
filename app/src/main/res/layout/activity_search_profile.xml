@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBarViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/background_toolbar"
+            app:titleTextColor="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/iconBackSearchFriend"
+                    android:src="@drawable/back"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_info_friend"
+                    android:textSize="20sp"
+                    android:paddingStart="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toEndOf="@+id/iconBackSearchFriend"
+                    android:layout_marginTop="10dp"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/profile_layout_search"
+            android:layout_below="@+id/toolBarViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_default"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FFFFFFFF"
+                android:id="@+id/profile_search"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentBottom="true"
+                android:elevation="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_default"/>
+
+            <TextView
+                android:id="@+id/textViewFullNameSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_toEndOf="@id/profile_search"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="7dp"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayoutSearchProfile"
+            android:layout_below="@+id/profile_layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/labelGenderSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_table_row_search_profile"
+                android:layout_marginBottom="@dimen/margin_table_row_search_profile"
+                android:text="@string/gender"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/padding_left_table_row"
+                android:textSize="@dimen/text_size_fragment_personal"
+                android:layout_span="1"/>
+
+            <TextView
+                android:id="@+id/textViewGenderSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_fragment_personal"
+                android:layout_marginTop="@dimen/margin_table_row_search_profile"
+                android:layout_marginBottom="@dimen/margin_table_row_search_profile"
+                android:layout_span="7"/>
+        </TableRow>
+
+        <View android:background="@color/gray"
+            android:layout_width ="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:elevation="2dp"/>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/labelPhoneNumberSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row_search_profile"
+                    android:layout_marginBottom="@dimen/margin_table_row_search_profile"
+                    android:text="@string/phoneNumber"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/padding_left_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="1"/>
+
+                <TextView
+                    android:id="@+id/textViewPhoneNumberSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_marginTop="@dimen/margin_table_row_search_profile"
+                    android:layout_marginBottom="@dimen/margin_table_row_search_profile"
+                    android:layout_span="7"
+                    />
+            </TableRow>
+
+            <View android:background="@color/gray"
+                android:layout_width ="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="2dp"/>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/labelDateofBirthSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row_search_profile"
+                    android:layout_marginBottom="@dimen/margin_table_row_search_profile"
+                    android:text="@string/dateOfBirth"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/padding_left_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="1"/>
+
+                <TextView
+                    android:id="@+id/textViewDateofBirthSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row_search_profile"
+                    android:layout_marginBottom="@dimen/margin_table_row_search_profile"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="7" />
+            </TableRow>
+
+            <View android:background="@color/gray"
+                android:layout_width ="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="2dp"/>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/labelAddressSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row_search_profile"
+                    android:layout_marginBottom="@dimen/margin_table_row_search_profile"
+                    android:text="@string/address"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/padding_left_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="1"/>
+
+                <TextView
+                    android:id="@+id/textViewAddressSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_marginTop="@dimen/margin_table_row_search_profile"
+                    android:layout_marginBottom="@dimen/margin_table_row_search_profile"
+                    android:layout_span="7" />
+            </TableRow>
+
+            <View android:background="@color/gray"
+                android:layout_width ="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="2dp"/>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/labelDescriptionSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row_search_profile"
+                    android:layout_marginBottom="@dimen/margin_table_row_search_profile"
+                    android:text="@string/description"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/padding_left_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="1"/>
+
+                <TextView
+                    android:id="@+id/textViewDescriptionSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_marginTop="@dimen/margin_table_row_search_profile"
+                    android:layout_marginBottom="@dimen/margin_table_row_search_profile"
+                    android:layout_span="7" />
+            </TableRow>
+
+            <View android:background="@color/gray"
+                android:layout_width ="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="2dp"/>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnAddFriend"
+            android:layout_below="@+id/tableLayoutSearchProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_fragment_personal"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:background="@drawable/round_button"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/btnRejectFriend"
+            android:layout_below="@+id/btnAddFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reject_friend_button"
+            android:textSize="@dimen/text_size_fragment_personal"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:background="@drawable/round_button_danger"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            />
+    </RelativeLayout>
+</ScrollView>

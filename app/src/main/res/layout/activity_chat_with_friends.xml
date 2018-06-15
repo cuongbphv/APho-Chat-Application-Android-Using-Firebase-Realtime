@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/replaceFragmentMoreInfo"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarMessages"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/background_toolbar"
+        app:titleTextColor="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/btnBackMessages"
+                android:src="@drawable/back"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/textViewNameFriend"
+                android:layout_toEndOf="@+id/btnBackMessages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lê Văn Nam"
+                android:textSize="16sp"
+                android:paddingStart="15dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/btnMoreInfo"
+                android:src="@drawable/icon_more_info"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearChatEditor"
+        android:layout_below="@+id/toolBarMessages"
+        android:background="#efefef"/>
+
+    <LinearLayout
+        android:id="@+id/linearChatEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="30"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/btnSendImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_open_folder_picture"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:padding="10dp"
+            android:layout_weight="3"/>
+
+        <ImageButton
+            android:id="@+id/btnSendAudio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_record_message"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="10dp"
+            android:layout_weight="3"/>
+        <ImageButton
+            android:id="@+id/btnOpenCamera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_upload_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="10dp"
+            android:layout_weight="3"/>
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edit_text"
+            android:padding="5dp"
+            android:hint="@string/message"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="18"
+            android:inputType="text|textMultiLine"/>
+
+
+        <ImageButton
+            android:id="@+id/btnSendMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_message_empty"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="3"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

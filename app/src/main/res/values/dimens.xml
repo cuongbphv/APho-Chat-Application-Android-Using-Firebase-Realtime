@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="text_size_fragment_personal">17sp</dimen>
+    <dimen name="text_size_edit_profile">18sp</dimen>
+    <dimen name="drawable_padding">5dp</dimen>
+    <dimen name="margin_top_10dp">10dp</dimen>
+    <dimen name="padding_left_right_20dp">20dp</dimen>
+    <dimen name="padding_left_right_30dp">30dp</dimen>
+    <dimen name="padding_left_table_row">15dp</dimen>
+    <dimen name="margin_table_row">10dp</dimen>
+    <dimen name="margin_table_row_search_profile">7dp</dimen>
+    <dimen name="margin_top_register_10dp">10dp</dimen>
+    <dimen name="padding_edit_text_7dp">7dp</dimen>
+    <dimen name="text_size_title_toolbar">18sp</dimen>
+</resources>

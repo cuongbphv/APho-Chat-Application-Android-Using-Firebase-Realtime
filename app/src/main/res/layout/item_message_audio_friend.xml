@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeAudioMessageFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_message_friend"
+        android:padding="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/labelPlayFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhấn"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageButton
+            android:id="@+id/btnPlayAudioMessageFriend"
+            android:layout_width="36dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/icon_play_message_audio"
+            android:background="@android:color/transparent"
+            android:layout_toEndOf="@+id/labelPlayFriend"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/labelToListenFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tin thoại"
+            android:layout_toEndOf="@+id/btnPlayAudioMessageFriend"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewAudioMessageTimeFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeAudioMessageFriend"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="5dp"
+        />
+
+</RelativeLayout>

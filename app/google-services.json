@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "537715673896",
+    "firebase_url": "https://android-apho.firebaseio.com",
+    "project_id": "android-apho",
+    "storage_bucket": "android-apho.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537715673896:android:46b43b1410bdaca5",
+        "android_client_info": {
+          "package_name": "com.bphvcg.apho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537715673896-ioi3vp5183p6bm6vgql9c3ukr1pvttc7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "537715673896-ioi3vp5183p6bm6vgql9c3ukr1pvttc7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb--SzG5kClIozAxqi0Va_oGwKpvTLG5M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

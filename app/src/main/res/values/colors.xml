@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="gray">#8F8F8F</color>
+    <color name="main_blue">#006DF0</color>
+    <color name="soft_main_blue">#3288ef</color>
+    <color name="soft_toolbar_blue">#4596f7</color>
+    <color name="main_orange">#ff741e</color>
+    <color name="soft_main_orange">#ff904c</color>
+    <color name="main_red">#ff0000</color>
+    <color name="soft_main_red">#ff2121</color>
+    <color name="main_green">#86B2B3</color>
+    <color name="soft_main_green">#9CC2BF</color>
+</resources>

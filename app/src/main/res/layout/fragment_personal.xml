@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout">
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_default"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FFFFFFFF"
+                android:id="@+id/civAvatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentBottom="true"
+                android:elevation="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_default"/>
+
+
+            <ImageView
+                android:id="@+id/btnEditPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:focusable="true"
+                android:src="@android:drawable/ic_menu_edit" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:layout_toEndOf="@id/civAvatar"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="7dp"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_below="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/labelGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row"
+                    android:layout_marginBottom="@dimen/margin_table_row"
+                    android:text="@string/gender"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/padding_left_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="1"/>
+
+                <TextView
+                    android:id="@+id/textViewGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row"
+                    android:layout_marginBottom="@dimen/margin_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="7"/>
+            </TableRow>
+
+            <View android:background="@color/gray"
+                android:layout_width ="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="2dp"/>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/labelPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row"
+                    android:layout_marginBottom="@dimen/margin_table_row"
+                    android:text="@string/phoneNumber"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/padding_left_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="1"/>
+
+                <TextView
+                    android:id="@+id/textViewPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row"
+                    android:layout_marginBottom="@dimen/margin_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="7"
+                    />
+            </TableRow>
+
+            <View android:background="@color/gray"
+                android:layout_width ="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="2dp"/>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/labelDateofBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row"
+                    android:layout_marginBottom="@dimen/margin_table_row"
+                    android:text="@string/dateOfBirth"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/padding_left_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="1"/>
+
+                <TextView
+                    android:id="@+id/textViewDateofBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row"
+                    android:layout_marginBottom="@dimen/margin_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="7" />
+            </TableRow>
+
+            <View android:background="@color/gray"
+                android:layout_width ="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="2dp"/>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/labelAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row"
+                    android:layout_marginBottom="@dimen/margin_table_row"
+                    android:text="@string/address"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/padding_left_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="1"/>
+
+                <TextView
+                    android:id="@+id/textViewAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row"
+                    android:layout_marginBottom="@dimen/margin_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="7" />
+            </TableRow>
+
+            <View android:background="@color/gray"
+                android:layout_width ="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="2dp"/>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/labelDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row"
+                    android:layout_marginBottom="@dimen/margin_table_row"
+                    android:text="@string/description"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/padding_left_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="1"/>
+
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_table_row"
+                    android:layout_marginBottom="@dimen/margin_table_row"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:layout_span="7" />
+            </TableRow>
+
+            <View android:background="@color/gray"
+                android:layout_width ="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="2dp"/>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_button"
+                    android:textSize="@dimen/text_size_fragment_personal"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:background="@drawable/round_button"
+                    android:layout_marginTop="10dp"
+                    android:layout_span="1"
+                    />
+            </TableRow>
+
+        </TableLayout>
+    </RelativeLayout>
+</ScrollView>
