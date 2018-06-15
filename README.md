@@ -6,4 +6,4 @@ Android chat using firebase to realtime, send text, images, record, ...
 using camera to take a photo to send, record voice, personal page, setting private policy
 - Custom layout chat using RecyclerView
 - Some image demo application:
-![alt text](https://raw.githubusercontent.com/cuongbphv/APho-Chat-Application-Android-Using-Firebase-Realtime/blob/master/app/src/main/res/drawable/chat_layout.png)
+![alt text](https://github.com/cuongbphv/APho-Chat-Application-Android-Using-Firebase-Realtime/blob/master/app/src/main/res/drawable/chat_layout.png)
